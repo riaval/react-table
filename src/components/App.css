@@ -1,0 +1,51 @@
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+.main-cell {
+    width: 400px;
+}
+
+.main-details {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+td.active {
+    background-color: darkseagreen;
+    position: relative;
+}
+
+td.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: -16px;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid green;
+}
+
+.details {
+    padding-left: 30px;
+    position: relative;
+    background-color: darkseagreen;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
